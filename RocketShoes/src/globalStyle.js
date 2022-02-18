@@ -9,7 +9,8 @@ const theme = extendTheme({
       },
       'body': {
         backgroundColor: '#E5E5E5',
-        fontFamily: 'Roboto'
+        fontFamily: 'Roboto',
+        fontWeight: 700
       }
     }
   }
