@@ -4,7 +4,6 @@ import {
   Box,
   Flex,
   Image,
-  Link,
   Input,
   InputGroup,
   InputLeftElement
@@ -16,39 +15,30 @@ import {
   iconBag
 } from '../assets'
 
+import ImageLink from './ImageLink'
+import NavLink from './NavLink';
+
 const NavBar = () => {
   return (
     <nav>
       <Flex pt={8} px={12} fontSize={20} align="center" justify="space-between">
-        <Box>
-          <Link>
-            <Image src={logo} alt="RocketShoes logo" />
-          </Link>
-        </Box>
+        <ImageLink src={logo} alt="RocketShoes logo" />
 
-        <Box>
-          <Link>
-            HOMEM
-          </Link>
-        </Box>
+        <NavLink>
+          HOMEM
+        </NavLink>
 
-        <Box>
-          <Link>
-            MULHER
-          </Link>
-        </Box>
+        <NavLink>
+          MULHER
+        </NavLink>
 
-        <Box>
-          <Link>
-            CRIANÇA
-          </Link>
-        </Box>
+        <NavLink>
+          CRIANÇA
+        </NavLink>
 
-        <Box>
-          <Link>
-            CUSTOMIZAR
-          </Link>
-        </Box>
+        <NavLink>
+          CUSTOMIZAR
+        </NavLink>
 
         <Box width="220px">
           <InputGroup>
@@ -64,11 +54,7 @@ const NavBar = () => {
           </InputGroup>
         </Box>
 
-        <Box>
-          <Link>
-            <Image src={iconBag} alt="Icon Bag" />
-          </Link>
-        </Box>
+        <ImageLink src={iconBag} alt="Icon Bag" />
       </Flex>
     </nav>
   );
