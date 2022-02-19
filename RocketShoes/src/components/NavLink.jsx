@@ -6,7 +6,7 @@ import { Box, Link } from '@chakra-ui/react'
 const NavLink = ({ children }) => {
   return (
     <Box>
-      <Link>
+      <Link fontSize={20}>
         {children}
       </Link>
     </Box>

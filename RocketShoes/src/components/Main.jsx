@@ -1,23 +1,24 @@
 import React from 'react';
 
-import { Flex } from '@chakra-ui/react'
+import { Box, Flex } from '@chakra-ui/react'
 
 import Shoes from './Shoes';
 import Price from './Price';
 
 const Main = () => {
   return (
-    <Flex
-      as="main"
-      width="100%"
-      height="100vh"
-      pos="absolute"
-      top="0"
-      zIndex="1"
-    >
-      <Price />
-      <Shoes />
-    </Flex>
+    <Box as="main" height="85vh">
+      <Flex
+        width="100%"
+        height="100vh"
+        pos="absolute"
+        top="0"
+        zIndex="1"
+      >
+        <Price />
+        <Shoes />
+      </Flex>
+    </Box>
   );
 };
 

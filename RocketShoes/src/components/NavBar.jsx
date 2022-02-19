@@ -25,7 +25,6 @@ const NavBar = () => {
       height="15%"
       pt={8}
       px={12}
-      fontSize={20}
       pos="relative"
       zIndex="2"
     >
