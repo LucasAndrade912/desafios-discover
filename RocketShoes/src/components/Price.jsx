@@ -19,8 +19,7 @@ const Price = () => {
         height="80%"
         pos="absolute"
         bottom="0"
-        justify="center"
-        align="center"
+        left="120px"
       >
         <Box width="50%">
           <Title>

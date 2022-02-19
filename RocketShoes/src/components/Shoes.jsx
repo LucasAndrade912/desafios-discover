@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Flex, Box, Image, Container } from '@chakra-ui/react'
+import { Flex, Box, Image, Container, Center } from '@chakra-ui/react'
 
 import {
   tenisAmpliado,
@@ -26,20 +26,29 @@ const Shoes = () => {
         align="center"
       >
         <Box>
-          <Container>
-            <Image src={tenisAmpliado} alt="Tênis sportivo" />
-          </Container>
+          <Center width="100%">
+            <Image width="55%" src={tenisAmpliado} alt="Tênis sportivo" />
+          </Center>
 
           <Flex justify="space-between" align="center">
-            <Container cursor="pointer">
-              <Image src={tenis1Galeria} />
-            </Container>
-            <Container cursor="pointer">
-              <Image src={tenis2Galeria} />
-            </Container>
-            <Container cursor="pointer">
-              <Image src={tenis3Galeria} />
-            </Container>
+              <Image
+                width="30%"
+                objectFit="cover"
+                src={tenis1Galeria}
+                alt="Tênis 1 galeria"
+              />
+              <Image
+                width="30%"
+                objectFit="cover"
+                src={tenis2Galeria}
+                alt="Tênis 2 galeria"
+              />
+              <Image
+                width="30%"
+                objectFit="cover"
+                src={tenis3Galeria}
+                alt="Tênis 3 galeria"
+              />
           </Flex>
         </Box>
       </Flex>
