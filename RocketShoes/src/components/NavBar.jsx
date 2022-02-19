@@ -20,43 +20,45 @@ import NavLink from './NavLink';
 
 const NavBar = () => {
   return (
-    <nav>
-      <Flex pt={8} px={12} fontSize={20} align="center" justify="space-between">
-        <ImageLink src={logo} alt="RocketShoes logo" />
+    <Box height="15%" pt={8} px={12} fontSize={20}>
+      <nav>
+        <Flex align="center" justify="space-between">
+          <ImageLink src={logo} alt="RocketShoes logo" />
 
-        <NavLink>
-          HOMEM
-        </NavLink>
+          <NavLink>
+            HOMEM
+          </NavLink>
 
-        <NavLink>
-          MULHER
-        </NavLink>
+          <NavLink>
+            MULHER
+          </NavLink>
 
-        <NavLink>
-          CRIANÇA
-        </NavLink>
+          <NavLink>
+            CRIANÇA
+          </NavLink>
 
-        <NavLink>
-          CUSTOMIZAR
-        </NavLink>
+          <NavLink>
+            CUSTOMIZAR
+          </NavLink>
 
-        <Box width="220px">
-          <InputGroup>
-            <InputLeftElement
-              pointerEvents="none"
-              children={<Image src={iconSearch} alt="Icon Search" />}
-            />
-            <Input
-              placeholder="Pesquisar"
-              borderRadius="none"
-              bgColor="#FFF"
-            />
-          </InputGroup>
-        </Box>
+          <Box width="220px">
+            <InputGroup>
+              <InputLeftElement
+                pointerEvents="none"
+                children={<Image src={iconSearch} alt="Icon Search" />}
+              />
+              <Input
+                placeholder="Pesquisar"
+                borderRadius="none"
+                bgColor="#FFF"
+              />
+            </InputGroup>
+          </Box>
 
-        <ImageLink src={iconBag} alt="Icon Bag" />
-      </Flex>
-    </nav>
+          <ImageLink src={iconBag} alt="Icon Bag" />
+        </Flex>
+      </nav>
+    </Box>
   );
 };
 

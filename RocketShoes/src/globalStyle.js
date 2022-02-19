@@ -11,6 +11,9 @@ const theme = extendTheme({
         backgroundColor: '#E5E5E5',
         fontFamily: 'Roboto',
         fontWeight: 700
+      },
+      '#root': {
+        height: '100%'
       }
     }
   }
