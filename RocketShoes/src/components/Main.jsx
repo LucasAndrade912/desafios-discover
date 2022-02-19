@@ -10,7 +10,7 @@ const Main = () => {
     <Flex
       as="main"
       width="100%"
-      height="75%"
+      height="100vh"
       pos="absolute"
       top="0"
       zIndex="1"
