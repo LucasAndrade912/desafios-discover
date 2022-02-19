@@ -20,7 +20,7 @@ import NavLink from './NavLink';
 
 const NavBar = () => {
   return (
-    <Box height="15%" pt={8} px={12} fontSize={20}>
+    <Box height="15%" pt={8} px={12} fontSize={20} pos="relative" zIndex="2">
       <nav>
         <Flex align="center" justify="space-between">
           <ImageLink src={logo} alt="RocketShoes logo" />
