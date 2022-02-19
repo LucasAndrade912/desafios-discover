@@ -57,6 +57,7 @@ const NavBar = () => {
               placeholder="Pesquisar"
               borderRadius="none"
               bgColor="#FFF"
+              _focus={{ border: "2px solid #FF0000" }}
             />
           </InputGroup>
         </Box>

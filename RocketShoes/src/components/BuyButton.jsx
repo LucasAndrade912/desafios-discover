@@ -12,6 +12,7 @@ const BuyButton = ({ children }) => {
       borderRadius="0"
       bgColor="#FF0000"
       color="#FFF"
+      _focus={{ border: "none" }}
       _hover={{ bgColor: "#f50000" }}
     >
       {children}
