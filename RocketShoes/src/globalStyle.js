@@ -16,6 +16,10 @@ const theme = extendTheme({
         height: '100%'
       }
     }
+  },
+  breakpoints: {
+    md: '900px',
+    lg: '960px',
   }
 })
 

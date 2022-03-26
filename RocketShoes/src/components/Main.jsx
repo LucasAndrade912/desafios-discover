@@ -7,11 +7,12 @@ import Price from './Price';
 
 const Main = () => {
   return (
-    <Box as="main" height="85vh">
+    <Box as="main" height={{ lg: '85vh' }}>
       <Flex
         width="100%"
-        height="100vh"
-        pos="absolute"
+        height={{ lg: '100vh' }}
+        pos={{ md: 'static', lg: 'absolute' }}
+        direction={{ md: 'column-reverse', lg: 'row' }}
         top="0"
         zIndex="1"
       >

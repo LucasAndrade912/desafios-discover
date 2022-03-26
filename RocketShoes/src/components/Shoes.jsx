@@ -12,15 +12,16 @@ import {
 const Shoes = () => {
   return (
     <Box
-      width="60%"
+      width={{ md: '100%', lg: '60%' }}
       height="100%"
       pos="relative"
       bgColor="#C4C4C4"
     >
       <Flex
         width="100%"
-        height="80%"
-        pos="absolute"
+        height={{ md: 'auto', lg: '80%' }}
+        pos={{ md: 'static', lg: 'absolute' }}
+        padding={{ md: '2rem 0' }}
         bottom="0"
         justify="center"
         align="center"
